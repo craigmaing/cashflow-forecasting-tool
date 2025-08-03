@@ -13,7 +13,7 @@ export default function ForecastPanel() {
   }
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4" data-testid="forecast-panel">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <SparklesIcon className="w-5 h-5 text-primary-600" />

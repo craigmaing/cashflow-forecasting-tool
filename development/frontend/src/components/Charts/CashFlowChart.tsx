@@ -13,7 +13,7 @@ export default function CashFlowChart({ data, loading }: CashFlowChartProps) {
   }
 
   return (
-    <div className="h-64 flex items-center justify-center bg-gray-50 rounded-lg">
+    <div className="h-64 flex items-center justify-center bg-gray-50 rounded-lg" data-testid="cash-flow-chart">
       <div className="text-center">
         <p className="text-gray-600 mb-2">Cash Flow Chart</p>
         <p className="text-sm text-gray-500">Chart.js integration coming soon</p>

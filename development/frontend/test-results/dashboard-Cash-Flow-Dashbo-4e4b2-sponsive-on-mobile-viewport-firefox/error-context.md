@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- heading "CashFlow Pro" [level=1]
+- navigation:
+  - link "Dashboard":
+    - /url: /
+  - link "Transactions":
+    - /url: /transactions
+  - link "Forecasting":
+    - /url: /forecasting
+  - link "Bank Accounts":
+    - /url: /accounts
+  - link "Reports":
+    - /url: /reports
+  - link "Settings":
+    - /url: /settings
+- banner:
+  - button
+  - paragraph: John Doe
+  - paragraph: Admin
+- main:
+  - heading "Cash Flow Dashboard" [level=1]
+  - paragraph: Monitor and forecast your organization's cash flow
+  - paragraph: Current Balance
+  - paragraph: $1,234,567
+  - text: +12.3%
+  - paragraph: Monthly Inflow
+  - paragraph: $456,789
+  - text: +8.2%
+  - paragraph: Monthly Outflow
+  - paragraph: $234,567
+  - text: "-3.1%"
+  - paragraph: 30-Day Forecast
+  - paragraph: $1,456,234
+  - text: +15.7%
+  - heading "Cash Flow Trends" [level=2]
+  - paragraph: Cash Flow Chart
+  - paragraph: Chart.js integration coming soon
+  - text: "Data Points: 3"
+  - heading "Recent Transactions" [level=2]
+  - paragraph: Client Payment - ABC Corp
+  - paragraph: 2025-08-03
+  - text: +$15,000
+  - paragraph: Office Rent
+  - paragraph: 2025-08-02
+  - text: $3,500
+  - paragraph: Software Subscription
+  - paragraph: 2025-08-02
+  - text: $299
+  - paragraph: Service Revenue
+  - paragraph: 2025-08-01
+  - text: +$8,500
+  - paragraph: Marketing Campaign
+  - paragraph: 2025-08-01
+  - text: $1,200
+  - button "View All Transactions"
+  - heading "AI Forecast" [level=2]
+  - text: AI Forecast 95% Confidence Next 7 Days+$45,230 Next 30 Days+$156,780 Next 90 Days+$425,690
+  - button "Generate New Forecast"
+  - text: "Last updated: 8/3/2025"
+- alert
+```

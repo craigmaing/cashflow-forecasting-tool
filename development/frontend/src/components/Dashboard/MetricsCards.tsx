@@ -51,9 +51,9 @@ export default function MetricsCards({ loading }: MetricsCardsProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-testid="metrics-cards">
       {metrics.map((metric, index) => (
-        <div key={index} className="bg-white rounded-lg shadow p-6">
+        <div key={index} className="bg-white rounded-lg shadow p-6" data-testid="metric-card">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-gray-600">{metric.title}</p>

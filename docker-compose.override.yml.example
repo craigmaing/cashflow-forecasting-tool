@@ -1,0 +1,24 @@
+# Docker Compose Override for Local Development
+# Copy this file to docker-compose.override.yml and adjust as needed
+# This file is automatically loaded by docker-compose and overrides values in docker-compose.yml
+
+version: '3.8'
+
+services:
+  backend:
+    # Override environment variables for local development
+    environment:
+      - DEBUG=true
+      - LOG_LEVEL=DEBUG
+      # Add any local-specific environment variables here
+    
+  frontend:
+    # Enable hot-reloading for frontend development
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    
+  postgres:
+    # Expose postgres for local database management tools
+    ports:
+      - "5432:5432"

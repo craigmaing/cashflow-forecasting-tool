@@ -27,8 +27,24 @@ services:
     environment:
       - DATABASE_URL=postgresql://cashflow_user:cashflow_password@postgres:5432/cashflow_db
       - REDIS_URL=redis://redis:6379/0
-      - SECRET_KEY=your-super-secret-key-change-this-in-production
+      - SECRET_KEY=your-super-secret-key-change-this-in-production-min-32-chars
       - ENVIRONMENT=development
+      - DEBUG=true
+      - HOST=0.0.0.0
+      - PORT=8000
+      - JWT_ALGORITHM=HS256
+      - JWT_EXPIRE_MINUTES=30
+      - CORS_ORIGINS=http://localhost:3000,http://localhost:3001
+      - ALLOWED_HOSTS=localhost,127.0.0.1,backend
+      - RATE_LIMIT_REQUESTS=100
+      - RATE_LIMIT_WINDOW=60
+      - DATABASE_POOL_SIZE=10
+      - DATABASE_MAX_OVERFLOW=20
+      - CACHE_TTL=3600
+      - STORAGE_TYPE=local
+      - ML_MODEL_PATH=models/
+      - ML_BATCH_SIZE=32
+      - ML_TRAINING_DATA_DAYS=365
     depends_on:
       - postgres
       - redis
@@ -42,6 +58,8 @@ services:
       - "3000:3000"
     environment:
       - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - REACT_APP_API_URL=http://localhost:8000
+      - NODE_ENV=development
     depends_on:
       - backend
     volumes:

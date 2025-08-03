@@ -12,7 +12,7 @@ export default function TransactionList({ limit = 10 }: TransactionListProps) {
   ].slice(0, limit)
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-3" data-testid="transaction-list">
       {mockTransactions.map((transaction) => (
         <div key={transaction.id} className="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg">
           <div className="flex-1">

@@ -6,15 +6,15 @@ pydantic-settings==2.1.0
 
 # Database
 asyncpg==0.29.0
-sqlalchemy==2.0.23
+sqlalchemy==2.0.25
 alembic==1.13.0
-timescaledb==0.1.0
+timescaledb==0.0.4
 
 # Authentication & Security
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
 python-multipart==0.0.6
-cryptography==41.0.8
+cryptography==42.0.5
 
 # Caching & Session
 redis==5.0.1
@@ -22,7 +22,7 @@ aioredis==2.0.1
 
 # HTTP Client & APIs
 httpx==0.25.2
-aiohttp==3.9.1
+aiohttp==3.9.3
 
 # Data Processing
 pandas==2.1.4
