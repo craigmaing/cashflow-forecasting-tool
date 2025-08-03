@@ -15,7 +15,7 @@ from typing import Optional
 
 # Import routers
 from routers import auth, organizations, users, accounts, transactions, forecasts, integrations, alerts
-from database import Database
+from database.connection import Database
 from config import settings
 from middleware.auth import verify_token
 from middleware.logging import setup_logging
